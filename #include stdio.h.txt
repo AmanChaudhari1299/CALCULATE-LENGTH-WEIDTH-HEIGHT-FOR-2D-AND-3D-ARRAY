@@ -1,0 +1,19 @@
+#include <stdio.h>
+float calculateVolume(float length, float width, float height) {
+    return length * width * height;
+}
+float calculateArea(float length, float width) {
+    return length * width;
+}
+int main() 
+{
+    float length_2d, width_2d;
+    float length_3d, width_3d, height_3d;
+    printf("Enter length and width of the rectangle for 2D calculation: ");
+    scanf("%f %f", &length_2d, &width_2d);
+    printf("Area of the rectangle: %.2f\n", calculateArea(length_2d, width_2d));
+    printf("\nEnter length, width, and height of the rectangular box for 3D calculation: ");
+    scanf("%f %f %f", &length_3d, &width_3d, &height_3d);
+    printf("Volume of the rectangular box: %.2f\n", calculateVolume(length_3d, width_3d, height_3d));
+    return 0;
+}
